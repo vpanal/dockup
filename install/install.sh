@@ -14,4 +14,4 @@ echo '  volumes:'>>$file
 echo '    - /etc/dockup/mountpoint:/var/www/html:ro'>>$file
 echo '  environment:'>>$file
 echo '    - VIRTUAL_HOST='$domain>>$file
-docker-compose -f $file.yml up -d
+docker-compose -f $file up -d
