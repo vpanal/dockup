@@ -33,7 +33,7 @@ echo '  expose:'>>$file
 echo '    - "80"'>>$file
 echo '    - "8080"'>>$file
 echo '  volumes:'>>$file
-echo '    -/usr/dockup/mountpoint'/$subdomain':/var/www/html:ro'>>$file
+echo '    - /usr/dockup/mountpoint'/$subdomain':/var/www/html:ro'>>$file
 echo '  environment:'>>$file
 echo '    - VIRTUAL_HOST='$subdomain.$domain>>$file
 docker-compose -f $file up -d
