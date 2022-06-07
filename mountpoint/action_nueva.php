@@ -59,7 +59,7 @@
             }
 
             //Ejecutar el script de cracion
-            exec("sshpass -p $sshpass ssh -p $sshport $sshuser@10.20.10.103 'bash -s < /etc/dockup/scripts/create.sh ".strtolower($name)." $domain $link'",$a, $execution);
+            exec("sshpass -p $sshpass ssh -p $sshport $sshuser@$dockersrv 'bash -s < /etc/dockup/scripts/create.sh ".strtolower($name)." $domain $link'",$a, $execution);
             if($execution!=0){
                 mysqli_rollback($enlace);
                 mysqli_close($enlace);
