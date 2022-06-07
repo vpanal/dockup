@@ -2,7 +2,7 @@
 subdomain=$1
 domain=$2
 fulldom=$subdomain.$domain
-prefix='root_site-'
+prefix='install_site-'
 sufix='_1'
 docker_output=$(docker stop $prefix$fulldom$sufix)
 
