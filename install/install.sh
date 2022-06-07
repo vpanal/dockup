@@ -3,6 +3,9 @@ docker build -t custom .
 docker-compose up -d
 domain=$1
 file=$domain.yml
+mkdir /var/log/dockup
+mkdir /usr/dockup
+mkdir /usr/dockup/mountpoint
 
 echo 'site-'$domain':'>>$file
 echo '  image:  custom'>>$file
