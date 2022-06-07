@@ -26,7 +26,7 @@ then
  exit 1
 fi
 
-rm -r/usr/dockup/mountpoint/$subdomain
+rm -r /usr/dockup/mountpoint/$subdomain
 
 date_output=$(date)
 echo "$date_output deleted $delete_output" >> /var/log/dockup/docker.log
