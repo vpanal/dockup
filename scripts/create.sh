@@ -4,7 +4,7 @@ domain=$2
 url=$3
 file=$subdomain.$domain.yml
 domainurl=$subdomain.$domain
-mkdir/usr/dockup/mountpoint/$subdomain
+mkdir /usr/dockup/mountpoint/$subdomain
 
 if [[ $? -ne 0 ]]
 then
