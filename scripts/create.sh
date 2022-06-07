@@ -14,7 +14,7 @@ then
  exit 1
 fi
 
-git clone $url/usr/dockup/mountpoint/$subdomain
+git clone $url /usr/dockup/mountpoint/$subdomain
 
 
 if [[ $? -ne 0 ]]
