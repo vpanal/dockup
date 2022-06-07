@@ -7,7 +7,7 @@
     $domain="elc.ddnsfree.com";
     $webport=80;
 //Docker server data
-    $dockersrv="10.20.10.103";
+    $dockersrv="10.20.10.114";
     $sshuser="root";
     $sshpass="12345";
     $sshport=22;
