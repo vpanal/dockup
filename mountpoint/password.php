@@ -15,21 +15,25 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="./favicon.png">
 
-    <script>
-        window.onload = function() {
-            document.getElementById("passwd-submit").addEventListener("click", function(e) {
-                e.preventDefault();
-                var password1 = document.getElementById("password1").value;
-                var password2 = document.getElementById("password2").value;
-                if (password1 != password2) {
-                    document.getElementById("error").style.visibility = "visible";
-                } else {
-                    document.getElementById("error").style.display = "hidden";
-                    document.getElementById("change-passwd").submit();
-                }
-            });
-        }
-    </script>
+        <script>
+            window.onload = function() {
+                document.getElementById("passwd-submit").addEventListener("click", function(e) {
+                    e.preventDefault();
+                    var password1 = document.getElementById("password1").value;
+                    var password2 = document.getElementById("password2").value;
+                    if (password1 != password2) {
+                        document.getElementById("error").style.visibility = "visible";
+                    } else {
+                        if (password1 == '' || password2 == '') {
+                        document.getElementById("error").style.visibility = "visible";
+                        }else{
+                            document.getElementById("error").style.display = "hidden";
+                            document.getElementById("change-passwd").submit();
+                        }  
+                    }
+                });
+            }
+        </script>
 
 
 
