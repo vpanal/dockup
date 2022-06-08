@@ -90,7 +90,7 @@
             </div>
         </div>
     </div>
-    <div class="pen-footer"><a href="https://github.com/vpanal">GitHub Project</a><a href="https://github.com/vpanal/dockup/blob/main/USERMANUAL.md">Manual</a></div>  
+    <div class="pen-footer"><a href="https://github.com/vpanal/dockup/" target=”_blank”>GitHub Project</a><a target=”_blank” href="https://github.com/vpanal/dockup/blob/main/USERMANUAL.md">Manual</a></div>  
 
 </body>
 
