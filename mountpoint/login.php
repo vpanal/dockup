@@ -9,8 +9,13 @@
         $password = $_POST['password'];
         
         $query = "SELECT id,username,passwd FROM users WHERE username='$username'";
+        if($result=mysqli_query($enlace,$query)){
+            $result = mysqli_fetch_array($result);
+        }else{
+            $_SESSION['login']=1;
+            header('Location: index.php');
+        }
 
-        $result = mysqli_fetch_array(mysqli_query($enlace,$query));
         
         if ($result&&password_verify($password, $result['passwd'])) {
             $_SESSION['deploy_user_id'] = htmlspecialchars($result['username']);
