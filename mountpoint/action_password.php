@@ -21,5 +21,7 @@
             $_SESSION['error']="Passwords are not the same.";
             header('Location: error.php');
         }
+    }else{
+        header('Location: error.php');
     }
 ?>
