@@ -2,15 +2,15 @@ Installation
 
 To install dockup you need a server with the following packets installed:
 
-docker-ce
+*docker-ce*
 
-docker-ce-cli
+*docker-ce-cli*
 
-containerd.io
+*containerd.io*
 
-docker-compose-plugin
+*docker-compose-plugin*
 
-docker-compose
+*docker-compose*
 
 
 We create the folders, import the repository and run the installation script
