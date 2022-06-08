@@ -1,4 +1,4 @@
-Dockup is an ASIR cycle synthesis project designed by:
+Dockup is an ASIR synthesis project designed by:
 
 https://www.linkedin.com/in/vpanal/
 
