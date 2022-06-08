@@ -77,5 +77,7 @@
             $_SESSION['error']="Number of instances exceeded.";
             header("Location: error.php");
         }
+    }else{
+        header('Location: error.php');
     }
 ?>
